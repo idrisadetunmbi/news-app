@@ -1,0 +1,32 @@
+buildscript {
+    ext.hilt_version = "2.33-beta"
+    ext.nav_version = "2.3.3"
+    ext.coroutines_version = "1.4.2"
+    ext.room_version = "2.3.0-beta02"
+    ext.paging_version = "3.0.0-beta01"
+    ext.work_version = "2.5.0"
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.0.0-alpha08"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.30"
+        classpath "com.google.dagger:hilt-android-gradle-plugin:$hilt_version"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+    }
+}
+
+allprojects {
+    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).all {
+        kotlinOptions {
+            freeCompilerArgs = ["-Xopt-in=kotlin.RequiresOptIn"]
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

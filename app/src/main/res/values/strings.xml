@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">News App</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="browse_articles">Browse Articles</string>
+    <string name="saved_articles">Saved Articles</string>
+    <string name="u_read_more"><u>Read full article</u></string>
+</resources>

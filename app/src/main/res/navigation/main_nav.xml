@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav.xml"
+    app:startDestination="@id/browse_articles_nav">
+
+
+    <fragment
+        android:id="@id/browse_articles_nav"
+        android:name="com.idrisadetunmbi.newsapp.ui.browsearticles.BrowseArticlesFragment"
+        android:label="Browse Articles"
+        tools:layout="@layout/fragment_browse_articles">
+        <action
+            android:id="@+id/action_browse_articles_nav_to_articleDetailsFragment"
+            app:destination="@id/articleDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/articleDetailsFragment"
+        android:name="com.idrisadetunmbi.newsapp.ui.ArticleDetailsFragment"
+        android:label="ArticleDetailsFragment">
+        <argument
+            android:name="article"
+            app:argType="com.idrisadetunmbi.newsapp.models.Article" />
+    </fragment>
+
+    <fragment
+        android:id="@id/saved_articles_nav"
+        android:name="com.idrisadetunmbi.newsapp.ui.savedarticles.SavedArticlesFragment"
+        android:label="Saved Articles">
+        <action
+            android:id="@+id/action_saved_articles_nav_to_articleDetailsFragment"
+            app:destination="@id/articleDetailsFragment" />
+    </fragment>
+</navigation>

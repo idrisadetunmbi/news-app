@@ -18,11 +18,11 @@
 
     <fragment
         android:id="@+id/articleDetailsFragment"
-        android:name="com.idrisadetunmbi.newsapp.ui.ArticleDetailsFragment"
+        android:name="com.idrisadetunmbi.newsapp.ui.articledetails.ArticleDetailsFragment"
         android:label="ArticleDetailsFragment">
         <argument
-            android:name="article"
-            app:argType="com.idrisadetunmbi.newsapp.models.Article" />
+            android:name="articleId"
+            app:argType="string" />
     </fragment>
 
     <fragment

@@ -1,7 +1,8 @@
 package com.idrisadetunmbi.newsapp.data.repositories.articlesrepository
 
-import com.idrisadetunmbi.newsapp.data.database.entities.ArticleEntity
-import com.idrisadetunmbi.newsapp.models.Article
+import com.idrisadetunmbi.newsapp.core.data.database.entities.ArticleEntity
+import com.idrisadetunmbi.newsapp.core.data.repositories.articlesrepository.DataMapper
+import com.idrisadetunmbi.newsapp.core.models.Article
 import org.junit.Assert.assertTrue
 import org.junit.Test
 import java.util.*

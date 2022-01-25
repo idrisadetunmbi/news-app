@@ -7,7 +7,7 @@ import androidx.work.ExistingPeriodicWorkPolicy.KEEP
 import androidx.work.PeriodicWorkRequestBuilder
 import androidx.work.WorkManager
 import androidx.work.WorkerParameters
-import com.idrisadetunmbi.newsapp.data.repositories.articlesrepository.ArticlesRepository
+import com.idrisadetunmbi.newsapp.core.data.repositories.articlesrepository.ArticlesRepository
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedInject
 import java.util.concurrent.TimeUnit

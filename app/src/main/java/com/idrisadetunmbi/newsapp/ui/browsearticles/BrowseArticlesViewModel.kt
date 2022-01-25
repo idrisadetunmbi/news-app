@@ -2,9 +2,9 @@ package com.idrisadetunmbi.newsapp.ui.browsearticles
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.idrisadetunmbi.newsapp.data.Resource
-import com.idrisadetunmbi.newsapp.data.repositories.articlesrepository.ArticlesRepository
-import com.idrisadetunmbi.newsapp.models.Article
+import com.idrisadetunmbi.newsapp.core.data.Resource
+import com.idrisadetunmbi.newsapp.core.data.repositories.articlesrepository.ArticlesRepository
+import com.idrisadetunmbi.newsapp.core.models.Article
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
@@ -28,9 +28,6 @@ class BrowseArticlesViewModel @Inject constructor(
             articlesRes.copy(data = updatedArticles)
         }
             .onEach { _state.value = _state.value.copy(articles = it) }
-            .catch {
-                // no-op
-            }
             .launchIn(viewModelScope)
     }
 

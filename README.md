@@ -23,17 +23,12 @@ The app is multi-module and uses the MVVM architecture (also employs clean archi
 - Dependency Injection with [Hilt](https://developer.android.com/training/dependency-injection/hilt-android)
 - [Custom tabs](https://developer.chrome.com/docs/android/custom-tabs/)
 
-## Requirements
+## Requirements/Getting Started
 
-- This current state of the project is built in Android Studio Arctic Fox | 2020.3.1 Patch 4
-
-## Getting Started
-
-- Open the project in Android Studio, sync project with Gradle files, and build project in AS
-- Connect a device and run the app on the device using AS.
+- The project is built in Android Studio with Arctic Fox | 2020.3.1 Patch 4 version
+- No additional steps are required. Open the project in Android Studio, sync project with Gradle files, and build project in AS, and run on a connected device/emulator
 
 #### Test
 
-- This project contains unit and instrumentation tests. To run the instrumentation tests, connect
-an Android device and run the included tests in Android studio.
+- This project contains unit tests and can be run in Android Studio.
   
